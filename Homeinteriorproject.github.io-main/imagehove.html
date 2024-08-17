@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .image-pair {
+      display: flex;
+    }
+
+    .image-container {
+      perspective: 1000px;
+      width: 150px; /* Set the desired image width */
+      height: 150px; /* Set the desired image height */
+      margin: 20px;
+    }
+
+    .image-container:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .flip-card-inner {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front img,
+    .flip-card-back img {
+      width: 100%; /* Ensure the image takes up 100% of the container */
+      height: 100%;
+      object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+      border-radius: 12px;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+      /* The back image */
+    }
+  </style>
+</head>
+<body>
+
+<div class="image-pair">
+  <div class="image-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="hoverimages/block1.png" alt="Front Image 1">
+        </div>
+        <div class="flip-card-back">
+          <img src="hoverimages/block2.png" alt="Back Image 1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="hoverimages/block3.png" alt="Front Image 2">
+        </div>
+        <div class="flip-card-back">
+          <img src="hoverimages/block4.png" alt="Back Image 2">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="image-pair">
+  <div class="image-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="hoverimages/block5.png" alt="Front Image 3">
+        </div>
+        <div class="flip-card-back">
+          <img src="hoverimages/block6.png" alt="Back Image 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="hoverimages/block7.png" alt="Front Image 4">
+        </div>
+        <div class="flip-card-back">
+          <img src="hoverimages/block8.png" alt="Back Image 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

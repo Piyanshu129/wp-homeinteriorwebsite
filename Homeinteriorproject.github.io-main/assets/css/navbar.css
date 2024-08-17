@@ -1,0 +1,43 @@
+nav{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont{
+  float:left;
+}
+.cont1{
+  float: right;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+li{
+  margin: 0 50px;
+}
+
+a{
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.mask-custom {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  letter-spacing: 3.5px;
+}
+
+.container1{
+    display: inline;
+    margin-left: 14px;
+}
